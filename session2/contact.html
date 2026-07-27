@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+</head>
+<body>
+ 
+    <form autocomplete="off" method="post">
+        <fieldset>
+            <legend >Employee details</legend>
+            <div>
+                <label>First Name :</label>
+                <input type="text" autocomplete="off" name="firstName" required pattern="[A-Za-zأ-ي\s]+"> 
+            </div>
+
+             <br>
+
+            <div>
+                <label>last name :</label>
+                <input type="text" id="lastname" minlength="5" name="lastname">
+            </div>
+
+             <br>
+
+            <div>
+                <label>mobile :</label>
+                <input type="tel" name="mobile" maxlength="11"pattern="01[0125][0-9]{8}">
+            </div>
+
+             <br>
+
+            <div>
+                <label>courses :</label>
+                <input list="courseslist" name="courses" placeholder="search">
+                <datalist id="courseslist">
+                    <option value="html"></option>
+                    <option value="css"></option>
+                    <option value="js"></option>
+                </datalist>
+            </div>
+
+             <br>
+
+            <div>
+                <label>upload image :</label>
+                <input type="file" name="userimage" accept=".png">
+            </div>
+
+            <br>
+
+            <div> 
+               <label>message</label><br>
+               <textarea name="message" required rows="5" cols="20" requied ></textarea>
+            </div>
+
+            <br>
+             
+            <div>
+                <label>date of birth :</label>
+                <input type="date" name="dob" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label>gender :</label>
+                <input type="radio" name="genger" value="male" required><label>male</label>
+                <input type="radio" name="genger" value="female" required><label>female</label>
+            </div>
+
+             <br>
+
+            <div>
+                <label>track</label>
+                <input type="checkbox" name="track" value="0" checked ><label>frontend</label>
+                <input type="checkbox" name="track" value="1" ><label>backend</label>
+                <input type="checkbox" name="track" value="2" ><label>network</label>
+            </div>
+
+             <br>
+
+            <div>
+                <label>range :</label>
+                <input type="range" name="range" min="10" max="100" >
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Register">
+                <input type="reset" value="clear data">
+            </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
+            
