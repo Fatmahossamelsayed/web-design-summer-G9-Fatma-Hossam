@@ -12,7 +12,6 @@ body {
     padding: 100px 20px;
 }
 
-/* الكارت الأب */
 .card {
     position: relative;
     width: 250px;
@@ -20,7 +19,6 @@ body {
     cursor: pointer;
 }
 
-/* 1. طبقة الصورة */
 .img-box {
     position: relative;
     width: 100%;
@@ -35,10 +33,9 @@ body {
     object-fit: cover;
 }
 
-/* 2. طبقة تفاصيل الكارت */
 .info-box {
     position: absolute;
-    inset: 0; /* اختصار لـ top, left, width, height 100% */
+    inset: 0;
     background: #fff;
     padding: 20px;
     display: flex;
@@ -61,7 +58,6 @@ body {
     color: #666;
 }
 
-/* ===== تأثير الـ Hover ===== */
 .card:hover .img-box {
     transform: translate(-30px, -30px);
 }
