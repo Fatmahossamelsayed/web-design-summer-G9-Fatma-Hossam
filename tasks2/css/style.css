@@ -4,7 +4,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* الحاوية الرئيسية */
 .container {
     display: flex;
     justify-content: center;
