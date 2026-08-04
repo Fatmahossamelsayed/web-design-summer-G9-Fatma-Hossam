@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bg-road {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.animation-card {
+    width: 280px;
+    position: absolute;
+    top: 60%; 
+    z-index: 2;
+    
+    animation: carMove 2.5s linear infinite;
+}
+
+.animation-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@keyframes carMove {
+    0% {
+        transform: translateY(-50%) translateX(100vw);
+    }
+    100% {
+        transform: translateY(-50%) translateX(-100%);
+    }
+}
