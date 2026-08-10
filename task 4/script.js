@@ -2,11 +2,13 @@ var courses = ["HTML", "CSS", "JavaScript"];
 
 var course = prompt("Enter course name:");
 
-    var index = courses.indexOf(course);
+var index = courses.indexOf(course);
 
-    if (index != -1) {
+if (index != -1) {
+    alert("Course exists at index: " + index);
     console.log(index);
-    } else {
+} else {
     courses.push(course);
+    alert("Updated list: " + courses.join(", "));
     console.log(courses);
-    }
+}
